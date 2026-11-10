@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { router } from "expo-router";
 import { SafeAreaView, StyleSheet, Text, TextInput, View } from "react-native";
 import { colors, radius, spacing, type } from "@/src/theme/tokens";
 import { PrimaryButton } from "@/src/components/PrimaryButton";
@@ -42,7 +43,7 @@ export default function BodyStart() {
         </View>
 
         <View style={styles.spacer} />
-        <PrimaryButton label="Continue to Guided Capture" onPress={() => {}} />
+        <PrimaryButton label="Continue to Guided Capture" onPress={() => router.push("/body-capture")} />
       </View>
     </SafeAreaView>
   );
