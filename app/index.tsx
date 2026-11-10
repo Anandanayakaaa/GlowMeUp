@@ -37,7 +37,7 @@ export default function WelcomeScreen() {
         <View style={styles.actions}>
           <PrimaryButton
             label="Discover Myself"
-            onPress={() => router.push("/know-me")}
+            onPress={() => router.push("/sign-up")}
           />
           <Text style={styles.secondary}>I already have an account</Text>
         </View>
